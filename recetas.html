@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Recetas</title>
+
+    <meta name="title" content="SaborVegetal - Recetas y alimentación vegana / vegetariana">
+    <meta name="description" content="Recetas veganas y vegetarianas Diseño de paginas web creadas con la última tecnología adaptables a todo tipo de dispositivos móviles diseños creados desde cero sin uso de plantillas como muchos otros diseñadores utilizan , creación de logotipos, posicionamiento de paginas, armado de redes y mas... ">
+
+    <meta name="Keywords" content="Sabor vegetal, vegetariano, vegano, recetas veganas, salud, alimentos, tips culinarios, nutricion, vegetales, recetas vegetarianas, recetas Chile">
+    <meta name="author" content="SaborVegetal">
+    <meta name="copyright" content="Propietario del copyright" />
+
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="ROBOTS" content="ALL">
+    <meta name="language" content="Spanish">
+    <meta http-equiv="Content-Language" content="Es">
+    <meta name="distribution" content="Global">
+    <meta name="city" content="Santiago">
+    <meta name="country" content="Chile">
+    <meta name="doc-type" content="Web Page">
+    <meta name="revisit-after" content="5 Days">
+
+</head>
+
+<body>
+    <!---------- Encabezado ---------->
+    <header class="container-fluid">
+        <!---------- Menu ---------->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu">
+            <!---------- Brand ---------->
+            <a class="navbar-brand menu__brand" href="index.html">
+                <img src="imagenes/hoja-brand.svg" alt="" height="40" width="40" class="d-inline-block align-center">SaborVegetal
+            </a>
+            
+            <!---------- Toggle ---------->
+            <button class="navbar-toggler menu__toggle" type="button" data-toggle="collapse" data-target="#menuColapsado"  aria-controls="menuColapsado" aria-expanded="false" aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!---------- Seccion menu ---------->
+            <div class="collapse navbar-collapse" id="menuColapsado">
+                <ul class="navbar-nav menu__colapsado">
+                    <li class="nav-item menu__colapsado__item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown menu__colapsado__item active">
+                        <a id="submenulink" class="nav-link dropdown-toggle" href="recetas.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recetas</a>
+                        <div class="dropdown-menu submenu" aria-labelledby="submenulink">
+                            <a class="dropdown-item submenu__item--color font-weight-bold" href="recetas.html">Todo</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item submenu__item--color" href="#">Desayunos</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Comidas</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Postres</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Cenas</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Bebidas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown menu__colapsado__item">
+                        <a id="submenulink2" class="nav-link dropdown-toggle" href="salud-nutri.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Salud y nutrición</a>
+                        <div class="dropdown-menu submenu" aria-labelledby="submenulink2">
+                            <a class="dropdown-item submenu__item--color font-weight-bold" href="salud-nutri.html">Todo</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item submenu__item--color" href="#">Salud</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Alternativas vegetales</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Alimentación vegana</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Nutrientes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item menu__colapsado__item">
+                        <a class="nav-link" href="tips-culi.html">Tips culinarios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!---------- Presentación ---------->
+        <div class="container-fluid mt-5">
+            <img src="imagenes/recetas_bnr.png" alt="logo" class="img-fluid mx-auto d-block" width="100%" height="auto">
+        </div>
+
+        <div class="text-center mr-5 ml-5 subindices">
+            <h1 class="text-uppercase mb-4 subindices__h1--color">Las recetas más exquisitas</h1>
+            <h6 class="text-uppercase mt-5 subindices__h6--color">Encuentra la receta que deseas y prepara tus comidas completamente veganas o vegetarianas</h6>
+        </div>
+
+        <div class="container input-group">
+            <input type="search" class="form-control rounded" placeholder="¿Qué receta estás buscando? Introduce el nombre o una palabra clave" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-success">Buscar</button>
+        </div>
+
+
+        <hr class="hr1 mr-5 ml-5">
+
+    </header>
+
+    <!---------- Desarrollo ---------->
+    <div class="row container col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+
+        <main class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto dIzquierda">
+            <!----------Desayunos------------->
+            <article class="galeria container mb-5">
+                <h4 class="text-uppercase  galeria__h4--color">Desayunos</h4>
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/desayuno.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/desayuno.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/desayuno.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/desayuno.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title text-center tarjeta__h6">Nombre de la categoria</h6>
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/desayuno.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title text-center tarjeta__h6">Nombre de la categoria</h6>
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/desayuno.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title text-center tarjeta__h6">Nombre de la categoria</h6>
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="container mt-3 d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary text-uppercase text-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más Desayunos</a>
+                </div>
+    
+            </article>
+    
+            <!----------Comidas------------->
+            <article class="galeria container mb-5">
+                <h4 class="text-uppercase  galeria__h4--color">Comidas</h4>
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/comidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/comidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/comidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/comidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/comidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/comidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="container mt-3 d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary text-uppercase text-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más Comidas</a>
+                </div>
+    
+            </article>
+
+            <!----------Postres------------->
+            <article class="galeria container mb-5">
+                <h4 class="text-uppercase  galeria__h4--color">Postres</h4>
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/postres.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/postres.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/postres.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/postres.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/postres.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/postres.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="container mt-3 d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary text-uppercase text-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más postres</a>
+                </div>
+    
+            </article>
+
+            <!----------Cenas------------->
+            <article class="galeria container mb-5">
+                <h4 class="text-uppercase  galeria__h4--color">Cenas</h4>
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/cenas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/cenas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/cenas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/cenas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/cenas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/cenas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="container mt-3 d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary text-uppercase text-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más cenas</a>
+                </div>
+    
+            </article>
+
+            <!----------Bebidas------------->
+            <article class="galeria container mb-5">
+                <h4 class="text-uppercase  galeria__h4--color">Bebidas</h4>
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/bebidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/bebidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/bebidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="row d-flex justify-content-around">
+                    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/bebidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/bebidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="imagenes/bebidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="container mt-3 d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary text-uppercase text-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más bebidas</a>
+                </div>
+    
+            </article>
+    
+        </main>
+
+    </div>
+
+    <!----------Publicidad------------->
+    <aside class="row container col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto mt-4 mb-4 publicidad">
+
+        <div class="publicidad__box mx-auto col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <h5 class="text-center publicidad__box--acolor">Publicidad</h5>
+        </div>
+
+        <div class="publicidad__box mx-auto col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <h5 class="text-center publicidad__box--acolor">Publicidad</h5>
+        </div>
+
+        <div class="publicidad__box mx-auto col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <h5 class="text-center publicidad__box--acolor">Publicidad</h5>
+        </div>
+    </aside>
+
+    <!----------Pie de Pagina------------->
+    <footer class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
+
+        <ul class="nav nav-pills nav-fill footer__menu">
+            <li class="nav-item footer__menu__texto">
+              <a class="nav-link footer__menu__texto--acolor" href="#" data-toggle="modal" data-target="#modalSend">Envíanos tus recetas</a>
+              <div class="modal" id="modalSend">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">¡Evíanos tu receta!</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+     
+                        <div class="modal-body">
+                            <img src="imagenes/recetario.svg" class="img-fluid mb-3" alt="Responsive image">
+                            <form class="formulario">
+                                <div class="form-group formulario__input">
+                                  <label for="InputName2">Nombre completo</label>
+                                  <input type="text" class="form-control" id="InputName2" placeholder="Enter full name">
+                                </div>
+                                <div class="form-group formulario__input">
+                                    <label for="InputEmail2">Email address</label>
+                                    <input type="email" class="form-control" id="InputEmail2" placeholder="Enter email">
+                                </div>
+                                <div class="form-group formulario__categoria">
+                                    <label for="inputCategoria2">Categoría</label>
+                                    <select id="inputCategoria2" class="form-control formulario__categoria--color">
+                                        <option>
+                                            Choose...
+                                        </option>
+                                        <option>
+                                            Desayunos
+                                        </option>
+                                        <option>
+                                            Comidas
+                                        </option>
+                                        <option>
+                                            Postres
+                                        </option>
+                                        <option>
+                                            Cenas
+                                        </option>
+                                        <option>
+                                            Bebidas
+                                        </option>
+                                    </select>
+                                </div>
+            
+                                <div class="form-group formulario__textarea">
+                                    <textarea class="form-control" id="Textarea2" rows="10" placeholder="Escribe tu receta incluyendo ingredientes y preparación..."></textarea>
+                                </div>
+                            </form>
+                            <h6 class="text-center text-uppercase font-weight-bold">¿Estás listo/a para enviarla?</h6>
+                        </div>
+    
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">¡Claro que sí!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </li>
+            <li class="nav-item footer__menu__texto">
+              <a class="nav-link footer__menu__texto--acolor" href="#">Suscríbete</a>
+            </li>
+        </ul>
+
+        <div class="container d-flex justify-content-center mt-3 mb-2">
+            <img src="imagenes/instagram.svg" alt="ig" class="img-fluid mr-4" width="25">
+            <img src="imagenes/facebook.svg" alt="fb" class="img-fluid mr-4" width="25">
+            <img src="imagenes/tik-tok.svg" alt="tt" class="img-fluid mr-4" width="25">
+            <img src="imagenes/correo.svg" alt="mail" class="img-fluid" width="25">
+        </div>
+        <!----------Boton UP------------->
+        <a href="recetas.html" class="btn footer__boton" role="button" aria-disabled="true">UP</a>
+    </footer>
+
+</body>
+</html>

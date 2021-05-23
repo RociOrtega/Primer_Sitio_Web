@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$colores: (
+    verde:   #1C5813,
+    oliva:   #546C1F,
+    bistre:  #8C7F2B,
+    baio:    #BABD8D,
+    gris:    #DEE5E5,
+    blanco:  #FFFFF4,
+    naranja: #FA9500,
+    d-orang: #EB6424,
+    negro:   #000000
+);
+
+$verde:   map-get($colores, verde);
+$oliva:   map-get($colores, oliva);
+$bistre:  map-get($colores, bistre);
+$baio:    map-get($colores, baio);
+$gris:    map-get($colores, gris);
+$blanco:  map-get($colores, blanco);
+$naranja: map-get($colores, naranja);
+$d-orang: map-get($colores, d-orang);
+$negro:   map-get($colores, negro);
+
+
+body{
+    background-color: $blanco;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+// M E N U
+.menu{
+    background-color: $negro;
+    .submenu{
+        background-color: $d-orang;
+    
+        .submenu__item--color{
+            color: $blanco;
+        }
+        .submenu__item--color:hover{
+            transform: scale(1.05);
+            transition: all 0.3s;
+            color: $negro;
+        }
+    }
+}
+
+
+
+// L O G O
+.presentacion__logo{
+    margin-top: 80px;
+}
+
+// T E X T O - P R E S E N T A C I O N
+.presentacion__texto--acolor{
+    color: $bistre;
+}
+
+$text-subin: (
+    h1: $verde,
+    h6: $bistre
+);
+
+
+// T E X T O - S U B I N D I C E S
+.subindices{
+    @each $heading, $color in $text-subin {
+        .subindices__#{$heading}--color{
+            color: $color;
+        }
+    }
+}
+
+
+// L I N E A - D E - D I V I S I O N
+@for $n from 1 through 2{
+    .hr#{$n}{
+        background-color: $naranja;
+        border-style: none;
+        @if($n == 1){
+            height: 3px;
+        } @else{
+            height: 1px;
+        }
+    } 
+}
+
+$text-card: (
+    h3: $d-orang,
+    h4: $verde,
+    h6: $naranja
+);
+
+// Z O N A - C E N T R A L - P A G I N A
+
+// A R T I C L E - Z O N A - I Z Q U I E R D A  
+.dIzquierda{
+
+    .galeria{
+        background-color: $gris;
+        border-bottom: 2px solid $naranja;
+        border-radius: 8px;
+
+        @each $heading, $color in $text-card {
+            .galeria__#{$heading}--color{
+                color: $color;
+                font-weight: bold;
+            }
+        }
+
+        .tarjeta{
+            border: 1px solid $d-orang;
+            background-color: $blanco;
+            width: 20rem;
+
+            @each $heading, $color in $text-card {
+                .tarjeta__#{$heading}{
+                    color: $color;
+                }
+            }
+        }
+            
+        .tarjeta:hover{
+            transform: scale(1.03);
+            border: 2px solid $d-orang;
+            transition: 0.5s;
+        }
+
+        .galeria__boton{
+            border-radius: 8px;
+            border: none;
+            height: 50px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            -webkit-transform: translateX(0px);
+            -webkit-transition-duration: 0.3s;
+        }
+
+        @for $i from 1 through 2{
+            @if($i == 1){
+                .galeria__boton--propiedades{
+                    width: 400px;
+                    letter-spacing: 4px;
+                    background-color: $oliva;
+                }
+            } @else {
+                .galeria__boton--propiedades2{
+                    width: 500px;
+                    background-color: #fa1100;
+                    margin-top: 10px;
+                }  
+            }
+        }
+
+        .galeria__boton:hover:before{
+            opacity: 0.4;
+            -webkit-transform: translateY(6px);
+            -webkit-animation: 1.5s sombra infinite;
+        }
+            
+        @-webkit-keyframes sombra{
+            50%{
+                opacity: 1;
+                -webkit-transform: translateY(3px);
+            }
+        }
+            
+        .galeria__boton:hover{
+            -webkit-transform: translateY(-6px);
+            -webkit-animation: 1.5s cajaMov infinite;
+        }
+            
+        @-webkit-keyframes cajaMov{
+            50%{
+                -webkit-transform: translateY(-1px);
+            }
+        }
+            
+        .galeria__boton:before{
+            position: absolute;
+            content: '';
+            top: 100%;
+            left: 5%;
+            height: 10px;
+            width: 90%;
+            opacity: 0;
+            background: -webkit-radial-gradien (center, ellipse,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 80%);
+            -webkit-transition-duration: 0.3s;
+        }
+    }
+}
+// A S I D E - Z O N A - D E R E C H A
+.dDerecha{
+    .dDerecha__texto--acolor{
+        color: $verde;
+    }
+    .videos{
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        .videos__box{
+            background-color: $negro;
+            height: 200px;
+            margin-bottom: 15px;
+
+            .videos__box--acolor{
+                color: $blanco;
+            }
+        }
+        
+        .videos__box:hover{
+            transform: scale(1.07);
+        } 
+    }
+}
+
+// Z O N A - P U B L I C I D A D
+.publicidad{
+    .publicidad__box{
+        background-color: $negro;
+        height: 200px;
+        margin-bottom: 10px;
+
+        .publicidad__box--acolor{
+            color: $blanco;
+        }
+    }
+
+    .publicidad__box:hover{
+        transform: scale(1.07);
+    } 
+}
+
+// // T A R J E T A S
+.tarjeta2{
+    .tarjeta__box2{
+        border: 1px solid $d-orang;
+        .tarjeta__box__h52{
+            color: $verde;
+        }
+        .tarjeta__box__p2{
+            color: $bistre;
+        }
+    }
+    .tarjeta__box2:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
+        border: 2px solid $d-orang;
+    }
+}
+
+
+// F O R M U L A R I O
+.formulario{
+    .formulario__categoria--color{
+        background-color: $verde;
+        color: $blanco;
+    }
+    .formulario__categoria--color:hover{
+        background-color: $verde;
+        color: $blanco;
+    }
+    .formulario__boton--propiedades{
+        background-color: $d-orang;
+        color: $blanco;
+        border-style: none;
+        border-radius: 8px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        width: 250px;
+        height: 50px;
+    }
+    .formulario__boton--propiedades:hover{
+        transform: scale(1.2);
+        animation: 1s flash 1;
+        transition: 0.5s;
+        color: $blanco;
+    }
+    
+    @keyframes flash{
+        50% { opacity: 1; }
+        25%, 75% { opacity: 0; }
+    }
+}
+
+// P I E -  D E -  P A G I N A
+.footer{
+    background-color: $verde;
+
+    .footer__menu__texto--acolor{
+        color: $blanco;
+        text-decoration-line: none;
+        font-size: 18px;
+    }
+
+    .footer__menu__texto--acolor:hover{
+        color: #fffff4c2;
+        text-decoration-line: underline;
+    }
+
+    .footer__boton{
+        background-color: $negro;
+        border-style: none;
+        width: 100%;text-decoration: none;
+        color: $blanco;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 30px;
+    }
+    .footer__boton:hover{
+        background-color: $oliva;
+    }
+}
