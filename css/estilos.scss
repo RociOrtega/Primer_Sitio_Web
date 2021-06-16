@@ -49,33 +49,10 @@ body{
     }
 }
 
-
-
 // L O G O
 .presentacion__logo{
     margin-top: 80px;
 }
-
-// T E X T O - P R E S E N T A C I O N
-.presentacion__texto--acolor{
-    color: $bistre;
-}
-
-$text-subin: (
-    h1: $verde,
-    h6: $bistre
-);
-
-
-// T E X T O - S U B I N D I C E S
-.subindices{
-    @each $heading, $color in $text-subin {
-        .subindices__#{$heading}--color{
-            color: $color;
-        }
-    }
-}
-
 
 // L I N E A - D E - D I V I S I O N
 @for $n from 1 through 2{
@@ -90,19 +67,20 @@ $text-subin: (
     } 
 }
 
-$text-card: (
-    h3: $d-orang,
-    h4: $verde,
-    h6: $naranja
-);
-
 // Z O N A - C E N T R A L - P A G I N A
 
 // A R T I C L E - Z O N A - I Z Q U I E R D A  
+
+$text-card: (
+    h2: $verde,
+    h5: $d-orang,
+    h6: $naranja
+);
+
+
 .dIzquierda{
 
     .galeria{
-        background-color: $gris;
         border-bottom: 2px solid $naranja;
         border-radius: 8px;
 
@@ -110,6 +88,7 @@ $text-card: (
             .galeria__#{$heading}--color{
                 color: $color;
                 font-weight: bold;
+                font-size: 25px;
             }
         }
 
@@ -117,10 +96,12 @@ $text-card: (
             border: 1px solid $d-orang;
             background-color: $blanco;
             width: 20rem;
+            height: auto;
 
             @each $heading, $color in $text-card {
                 .tarjeta__#{$heading}{
                     color: $color;
+                    font-size: 19px;
                 }
             }
         }
@@ -174,46 +155,55 @@ $text-card: (
 .dDerecha{
     .dDerecha__texto--acolor{
         color: $verde;
+        font-size: 23px;
+    }
+    .dDerecha_presentacion--acolor{
+    color: $oliva;
     }
 }
 
-// Z O N A - P U B L I C I D A D
-.publicidad{
-    .publicidad__img:hover{
-        transform: scale(1.07);
-    } 
+// V I D E O S
+.videos{
+    width: 18rem;
+}
+.videos__texto--acolor{
+    color: $verde;
+    font-size: 21px;
 }
 
-// // T A R J E T A S
-.tarjeta2{
-    .tarjeta__box2{
-        border: 1px solid $d-orang;
-        .tarjeta__box__h52{
-            color: $verde;
-        }
-        .tarjeta__box__p2{
-            color: $bistre;
-        }
+// P I E -  D E -  P A G I N A
+.footer{
+    background-color: $verde;
+    height: auto;
+
+    .footer__menu__texto--acolor{
+        color: $blanco;
+        text-decoration-line: none;
+        font-size: 18px;
     }
-    .tarjeta__box2:hover{
-        transform: scale(1.05);
-        transition: 0.5s;
-        border: 2px solid $d-orang;
+
+    .footer__menu__texto--acolor:hover{
+        color: #fffff4c2;
+        text-decoration-line: underline;
     }
 }
 
-// P A G I N A C I O N  
-.paginacion{
-    .paginacion__item{
-       .paginacion__link--color{
-           color: $negro;
-       }
-       .paginacion__link--active{
-           color: $d-orang;
-        }
-    }  
+.footer__boton{
+    background-color: $negro;
+    border-style: none;
+    border-radius: 0;
+    width: 100%;
+    text-decoration: none;
+    color: $blanco;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 30px;
 }
-
+.footer__boton:hover{
+    background-color: $oliva;
+}
 
 // F O R M U L A R I O
 .formulario{
@@ -248,33 +238,3 @@ $text-card: (
     }
 }
 
-// P I E -  D E -  P A G I N A
-.footer{
-    background-color: $verde;
-
-    .footer__menu__texto--acolor{
-        color: $blanco;
-        text-decoration-line: none;
-        font-size: 18px;
-    }
-
-    .footer__menu__texto--acolor:hover{
-        color: #fffff4c2;
-        text-decoration-line: underline;
-    }
-
-    .footer__boton{
-        background-color: $negro;
-        border-style: none;
-        width: 100%;text-decoration: none;
-        color: $blanco;
-        letter-spacing: 5px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        height: 30px;
-    }
-    .footer__boton:hover{
-        background-color: $oliva;
-    }
-}

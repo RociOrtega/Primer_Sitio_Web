@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="shortcut icon" href="assets/brand/hoja-brand.svg">
+
+    <title>SaborVegetal - Contacto</title>
+
+    <meta name="title" content="SaborVegetal - Recetas y alimentación vegana / vegetariana">
+    <meta name="description" content="Todo lo que necesitas saber sobre alimentación y recetas veganas/vegetarianas">
+
+    <meta name="Keywords" content="Sabor vegetal, vegetariano, vegano, recetas veganas, salud, alimentos, tips culinarios, nutricion, vegetales, recetas vegetarianas, recetas Chile, nutrientes">
+    <meta name="author" content="SaborVegetal">
+    <meta name="copyright" content="Propietario del copyright" />
+
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="ROBOTS" content="ALL">
+    <meta name="language" content="Spanish">
+    <meta http-equiv="Content-Language" content="Es">
+    <meta name="distribution" content="Global">
+    <meta name="city" content="Santiago">
+    <meta name="country" content="Chile">
+    <meta name="doc-type" content="Web Page">
+    <meta name="revisit-after" content="5 Days">
+
+</head>
+
+<body>
+    <!---------- Encabezado ---------->
+    <header class="container-fluid">
+        <!---------- Menu ---------->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu">
+            <!---------- Brand ---------->
+            <a class="navbar-brand menu__brand" href="index.html">
+                <img src="assets/brand/hoja-brand.svg" alt="Hoja, correspondiente al logo de SaborVegetal" height="40" width="40" class="d-inline-block align-center">SaborVegetal
+            </a>
+            
+            <!---------- Toggle ---------->
+            <button class="navbar-toggler menu__toggle" type="button" data-toggle="collapse" data-target="#menuColapsado"  aria-controls="menuColapsado" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!---------- Seccion menu ---------->
+            <div class="collapse navbar-collapse" id="menuColapsado">
+                <ul class="navbar-nav menu__colapsado">
+                    <li class="nav-item menu__colapsado__item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown menu__colapsado__item">
+                        <a id="submenulink" class="nav-link dropdown-toggle" href="recetas.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recetas</a>
+                        <div class="dropdown-menu submenu" aria-labelledby="submenulink">
+                            <a class="dropdown-item submenu__item--color font-weight-bold" href="recetas.html">Todo</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item submenu__item--color" href="#">Comidas dulces</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Comidas saladas</a>
+                            <a class="dropdown-item submenu__item--color" href="#">Bebidas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item menu__colapsado__item">
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item active menu__colapsado__item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!---------- Presentación ---------->
+        <div class="container mt-5 presentacion">
+            <img src="assets/brand/logo1.png" alt="Segundo logo de SaborVegetal, formado por un círculo negro con una etiqueta verde con el nombre de Sabor Vegetal y un subtítulo rosado que dice come sano, come vegano" class="presentacion__logo img-fluid mx-auto d-block" width="450">
+        </div>
+
+        <hr class="hr1 mt-5 mr-5 ml-5 mb-5">
+
+    </header>
+
+    <!---------- Desarrollo ---------->
+    <main>
+        <h2 class="text-uppercase text-center mb-5">Contacto | SaborVegetal</h2>
+        <form action="" class="ml-5 mr-5 mb-5 form-contact">
+            <div class="form-group">
+                <label for="y-name">Nombre:
+                    <br> 
+                    <input type="text" name="y-name" id="y-name" placeholder="Tu nombre:" class="form-control">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="y-email">Dirección de correo electrónico:
+                    <br> 
+                    <input type="email" name="y-email" id="y-email" placeholder="Tu dirección de correo electrónico:" class="form-control ">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="y-email2">Confirma tu dirección de correo electrónico:
+                    <br> 
+                    <input type="email" name="y-email2" id="y-email2" placeholder="Confirma tu dirección de correo electrónico:" class="form-control">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:
+                    <br> <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control"></textarea>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </main>
+
+
+
+    <!----------Pie de Pagina------------->
+    <footer class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
+
+        <ul class="nav nav-pills nav-fill footer__menu">
+            <li class="nav-item footer__menu__texto">
+                <a class="nav-link footer__menu__texto--acolor" href="#" data-toggle="modal" data-target="#modalSend">Envíanos tus recetas</a>
+                <div class="modal" id="modalSend">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">¡Evíanos tu receta!</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+     
+                            <div class="modal-body">
+                                <img src="assets/form/form-footer.svg" class="img-fluid mb-3" alt="" width="250">
+                                <form action="POST" class="formulario">
+                                    <div class="form-group formulario__input">
+                                        <label for="InputName2">Nombre completo</label>
+                                        <input type="text" class="form-control" id="InputName2" placeholder="Enter full name">
+                                    </div>
+                                    <div class="form-group formulario__input">
+                                        <label for="InputEmail2">Email address</label>
+                                        <input type="email" class="form-control" id="InputEmail2" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group formulario__categoria">
+                                        <label for="inputCategoria2">Categoría</label>
+                                        <select id="inputCategoria2" class="form-control formulario__categoria--color">
+                                            <option>
+                                            Choose...
+                                            </option>
+                                            <option>
+                                            Comidas saladas
+                                            </option>
+                                            <option>
+                                            Comidas dulces
+                                            </option>
+                                            <option>
+                                            Bebidas
+                                            </option>
+                                            <option>
+                                            Otras
+                                            </option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="form-group formulario__textarea">
+                                        <textarea class="form-control" id="Textarea2" rows="10" placeholder="Escribe tu receta incluyendo ingredientes y preparación..."></textarea>
+                                    </div>
+                                </form>
+                                <h6 class="text-center text-uppercase font-weight-bold">¿Estás listo/a para enviarla?</h6>
+                            </div>
+    
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">¡Claro que sí!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item footer__menu__texto">
+                <a class="nav-link footer__menu__texto--acolor" href="#" data-toggle="modal" data-target="#modalSusc">Suscríbete</a>
+                <div class="modal" id="modalSusc">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">¡Así que quieres suscribirte!</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/form/form-check.svg" class="img-fluid mb-3" alt="" width="150">
+                                <form action="POST" class="formulario">
+                                    <div class="form-group formulario__input">
+                                        <label for="Name">Nombre completo</label>
+                                        <input type="text" class="form-control" id="Name" placeholder="Enter full name">
+                                    </div>
+                                    <div class="form-group formulario__input">
+                                        <label for="Email">Email address</label>
+                                        <input type="email" class="form-control" id="Email" placeholder="Enter email">
+                                    </div>
+                                </form>
+                                <h6 class="text-center text-uppercase font-weight-bold">¿Estás seguro/a de suscribirte?</h6>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">¡Claro que sí!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="container d-flex justify-content-center mt-3 mb-2">
+            <img src="assets/rrss/instagram.svg" alt="instagram" class="img-fluid mr-4" width="25">
+            <img src="assets/rrss/facebook.svg" alt="facebook" class="img-fluid mr-4" width="25">
+            <img src="assets/rrss/tik-tok.svg" alt="tik-tok" class="img-fluid mr-4" width="25">
+            <img src="assets/rrss/correo.svg" alt="correo" class="img-fluid" width="25">
+        </div>
+        <!----------Boton UP------------->
+        <a href="index.html" class="btn footer__boton" role="button" aria-disabled="true">UP</a>
+    </footer>
+
+</body>
+</html>

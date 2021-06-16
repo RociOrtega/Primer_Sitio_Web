@@ -46,8 +46,7 @@
             </a>
             
             <!---------- Toggle ---------->
-            <button class="navbar-toggler menu__toggle" type="button" data-toggle="collapse" data-target="#menuColapsado"  aria-controls="menuColapsado" aria-expanded="false" aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler menu__toggle" type="button" data-toggle="collapse" data-target="#menuColapsado"  aria-controls="menuColapsado" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -57,28 +56,14 @@
                     <li class="nav-item menu__colapsado__item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown menu__colapsado__item active">
-                        <a id="submenulink" class="nav-link dropdown-toggle" href="recetas.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recetas</a>
-                        <div class="dropdown-menu submenu" aria-labelledby="submenulink">
-                            <a class="dropdown-item submenu__item--color font-weight-bold" href="recetas.html">Todo</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item submenu__item--color" href="#">Comidas dulces</a>
-                            <a class="dropdown-item submenu__item--color" href="#">Comidas saladas</a>
-                            <a class="dropdown-item submenu__item--color" href="#">Bebidas</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown menu__colapsado__item">
-                        <a id="submenulink2" class="nav-link dropdown-toggle" href="salud-nutri.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Salud y nutrición</a>
-                        <div class="dropdown-menu submenu" aria-labelledby="submenulink2">
-                            <a class="dropdown-item submenu__item--color font-weight-bold" href="salud-nutri.html">Todo</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item submenu__item--color" href="#">Salud</a>
-                            <a class="dropdown-item submenu__item--color" href="#">Alternativas vegetales</a>
-                            <a class="dropdown-item submenu__item--color" href="#">Alimentación vegana</a>
-                        </div>
+                    <li class="nav-item active menu__colapsado__item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
                     </li>
                     <li class="nav-item menu__colapsado__item">
-                        <a class="nav-link" href="tips-culi.html">Tips culinarios</a>
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item menu__colapsado__item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -100,23 +85,27 @@
         </div>
 
 
-        <hr class="hr1 mr-5 ml-5">
+        <hr class="hr1 mr-5 ml-5 mb-5">
 
     </header>
 
     <!---------- Desarrollo ---------->
     <div class="row container col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
-
-        <main class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto dIzquierda">
-            <!----------Dulce------------->
+        <main class="container col-xs-12 col-sm-12 col-md-6 col-lg-8 mx-auto dIzquierda">
+            <!----------Recetas------------->
             <article class="galeria container mb-5">
-                <h2 class="text-uppercase  galeria__h4--color">Comidas dulces</h2>
                 <div class="row d-flex justify-content-around">
                     
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/desayuno.jpeg" alt="Desayuno con cereales, frutos rojos y yogurt dentro de un bol blanco">
+                        <img class="card-img-top" src="assets/recetas/img-recetas.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Fácil</small>
+                                <small class="">15min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
@@ -124,33 +113,16 @@
                     </div>
 
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/desayuno.jpeg" alt="Desayuno con cereales, frutos rojos y yogurt dentro de un bol blanco">
+                        <img class="card-img-top" src="assets/recetas/img-recetas.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/desayuno.jpeg" alt="Desayuno con cereales, frutos rojos y yogurt dentro de un bol blanco">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="row d-flex justify-content-around">
-                    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/postres.jpeg" alt="Cheesecake de frutoss rojos sobre una hoja de diario con una cuchara al lado">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Medio</small>
+                                <small class="">30min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
@@ -158,42 +130,16 @@
                     </div>
 
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/postres.jpeg" alt="Cheesecake de frutoss rojos sobre una hoja de diario con una cuchara al lado">
+                        <img class="card-img-top" src="assets/recetas/postres.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/postres.jpeg" alt="Cheesecake de frutoss rojos sobre una hoja de diario con una cuchara al lado">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-                <div class="container mt-3 d-flex justify-content-center">
-                    <a href="#" class="btn btn-primary text-uppercase d-flex justify-content-center align-items-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más Desayunos</a>
-                </div>
-    
-            </article>
-    
-            <!----------Salado------------->
-            <article class="galeria container mb-5">
-                <h2 class="text-uppercase  galeria__h4--color">Comidas saladas</h2>
-                <div class="row d-flex justify-content-around">
-                    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/comidas.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Medio</small>
+                                <small class="">45min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
@@ -201,33 +147,15 @@
                     </div>
 
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/comidas.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/recetas/postres.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/comidas.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="row d-flex justify-content-around">
-                    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/cenas.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Fácil</small>
+                                <small class="">20min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
@@ -235,42 +163,17 @@
                     </div>
 
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/cenas.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/recetas/comidas.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/cenas.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-                <div class="container mt-3 d-flex justify-content-center">
-                    <a href="#" class="btn btn-primary text-uppercase d-flex justify-content-center align-items-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más Comidas</a>
-                </div>
-    
-            </article>
-
-            <!----------Bebidas------------->
-            <article class="galeria container mb-5">
-                <h2 class="text-uppercase  galeria__h4--color">Bebidas</h2>
-                <div class="row d-flex justify-content-around">
-                    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Plato negro con diferentes verduras picadas en forma de cuadros, formando una comida.">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/cuchillo.png" alt="" width="7.6" class="img-fluid">
+                                <small class="ml-1 mr-5">Difícil</small>
+                                <small class="">90min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
@@ -278,33 +181,17 @@
                     </div>
 
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Plato negro con diferentes verduras picadas en forma de cuadros, formando una comida.">
+                        <img class="card-img-top" src="assets/recetas/comidas.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Plato negro con diferentes verduras picadas en forma de cuadros, formando una comida.">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="row d-flex justify-content-around">
-                    
-                    <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Sandwich de tomate con hojas verdes y queso vegano sobre una tabla de madera">
-                        <div class="card-body">
-                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/cuchillo.png" alt="" width="7.6" class="img-fluid">
+                                <small class="ml-1 mr-5">Difícil</small>
+                                <small class="">60min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
@@ -312,9 +199,16 @@
                     </div>
 
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Sandwich de tomate con hojas verdes y queso vegano sobre una tabla de madera">
+                        <img class="card-img-top" src="assets/recetas/cenas.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Medio</small>
+                                <small class="">35min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
@@ -322,140 +216,293 @@
                     </div>
     
                     <div class="card tarjeta mr-3 mb-3">
-                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Sandwich de tomate con hojas verdes y queso vegano sobre una tabla de madera">
+                        <img class="card-img-top" src="assets/recetas/cenas.jpeg" alt="Pizza vegana verde con tomate">
                         <div class="card-body">
                             <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Fácil</small>
+                                <small class="">25min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="assets/recetas/desayuno.jpeg" alt="Pizza vegana verde con tomate">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Fácil</small>
+                                <small class="">15min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="assets/recetas/desayuno.jpeg" alt="Pizza vegana verde con tomate">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Medio</small>
+                                <small class="">30min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Pizza vegana verde con tomate">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Medio</small>
+                                <small class="">45min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="assets/recetas/bebidas.jpeg" alt="Pizza vegana verde con tomate">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Fácil</small>
+                                <small class="">20min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="assets/recetas/img-recetas.jpeg" alt="Pizza vegana verde con tomate">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <img src="assets/recetas/tenedor.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Medio</small>
+                                <small class="">35min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
                         </div>
                     </div>
     
-                </div>
-
-                <div class="container mt-3 d-flex justify-content-center">
-                    <a href="#" class="btn btn-primary text-uppercase d-flex justify-content-center align-items-center galeria__boton galeria__boton--propiedades" role="button" aria-pressed="true">Más bebidas</a>
+                    <div class="card tarjeta mr-3 mb-3">
+                        <img class="card-img-top" src="assets/recetas/img-recetas.jpeg" alt="Pizza vegana verde con tomate">
+                        <div class="card-body">
+                            <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nombre de la receta</h5>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                <img src="assets/recetas/cuchara.png" alt="" width="10" class="img-fluid">
+                                <small class="ml-1 mr-5">Fácil</small>
+                                <small class="">25min</small>
+                                <img src="assets/recetas/cronometro.png" alt="" width="35" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-success text-uppercase d-flex justify-content-center">Ver receta</a>
+                        </div>
+                    </div>
                 </div>
     
             </article>
     
         </main>
 
+        <!----------Info Derecha------------->
+        <aside class="container col-xs-12 col-sm-12 col-md-6 col-lg-4 dDerecha">
+
+            <img src="assets/form/form-aside.svg" class="img-fluid mt-3 mb-4" alt="">
+                <h3 class="text-center font-weight-bold dDerecha__texto--acolor mt-3">Si quieres que tus recetas sean parte de nuestra comunidad no dudes en enviarla!!</h3>
+            <div class="container" id="envioReceta">
+                <form class="formulario mt-4">
+                    <div class="form-group formulario__input">
+                      <label for="InputName">Nombre completo</label>
+                      <input type="text" class="form-control" id="InputName" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group formulario__input">
+                        <label for="InputEmail">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group formulario__categoria">
+                        <label for="inputCategoria">Categoría</label>
+                        <select id="inputCategoria" class="form-control formulario__categoria--color">
+                            <option>
+                                Choose...
+                            </option>
+                            <option>
+                                Comidas saladas
+                            </option>
+                            <option>
+                                Comidas dulces
+                            </option>
+                            <option>
+                                Bebidas
+                            </option>
+                            <option>
+                                Otras
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group formulario__textarea">
+                        <textarea class="form-control" id="Textarea" rows="19" placeholder="Escribe tu receta incluyendo ingredientes y preparación..."></textarea>
+                    </div>
+                    
+
+                    <div class="row container mx-auto mb-3 formulario__boton">
+                        <button type="submit" class="btn formulario__boton--propiedades mx-auto">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <h3 class="text-center font-weight-bold dDerecha__texto--acolor mt-5">Artículos que te pueden interesar</h3>
+            <div class="container mt-4">
+                <div class="card tarjeta mb-3">
+                    <img class="card-img-top" src="assets/sa_nu/nutrientes.jpeg" alt="Pizza vegana verde con tomate">
+                    <div class="card-body">
+                        <h5 class="text-center card-title font-weight-bold tarjeta__h5">Nutrientes que no pueden faltar en tu dieta</h5>
+                    </div>
+                </div>
+
+                <div class="card tarjeta mb-3">
+                    <img class="card-img-top" src="assets/sa_nu/vegetales.jpeg" alt="Pizza vegana verde con tomate">
+                    <div class="card-body">
+                        <h5 class="text-center card-title font-weight-bold tarjeta__h5">Cómo reemplazar los alimentos de procedentes de animales con vegetales</h5>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
     </div>
 
-    <!----------Publicidad------------->
-    <aside class="row container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-auto publicidad d-flex justify-content-around mb-2">
-
-        <img src="assets/anuncios-svg/anuncio1.svg" class="img-fluid publicidad__img" alt="anuncio1" width="280">
-
-        <img src="assets/anuncios-svg/anuncio3.svg" class="img-fluid publicidad__img" alt="anuncio2" width="280">
-
-        <img src="assets/anuncios-svg/anuncio4.svg" class="img-fluid publicidad__img" alt="anuncio2" width="280">
-
-    </aside>
-
     <!----------Pie de Pagina------------->
-    <footer class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
+    <footer class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
 
-        <ul class="nav nav-pills nav-fill footer__menu">
-            <li class="nav-item footer__menu__texto">
-                <a class="nav-link footer__menu__texto--acolor" href="#" data-toggle="modal" data-target="#modalSend">Envíanos tus recetas</a>
-                <div class="modal" id="modalSend">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">¡Evíanos tu receta!</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-     
-                            <div class="modal-body">
-                                <img src="assets/form/form-footer.svg" class="img-fluid mb-3" alt="" width="250">
-                                <form action="POST" class="formulario">
-                                    <div class="form-group formulario__input">
-                                        <label for="InputName2">Nombre completo</label>
-                                        <input type="text" class="form-control" id="InputName2" placeholder="Enter full name">
-                                    </div>
-                                    <div class="form-group formulario__input">
-                                        <label for="InputEmail2">Email address</label>
-                                        <input type="email" class="form-control" id="InputEmail2" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group formulario__categoria">
-                                        <label for="inputCategoria2">Categoría</label>
-                                        <select id="inputCategoria2" class="form-control formulario__categoria--color">
-                                            <option>
-                                            Choose...
-                                            </option>
-                                            <option>
-                                            Comidas saladas
-                                            </option>
-                                            <option>
-                                            Comidas dulces
-                                            </option>
-                                            <option>
-                                            Bebidas
-                                            </option>
-                                            <option>
-                                            Otras
-                                            </option>
-                                        </select>
-                                    </div>
-            
-                                    <div class="form-group formulario__textarea">
-                                        <textarea class="form-control" id="Textarea2" rows="10" placeholder="Escribe tu receta incluyendo ingredientes y preparación..."></textarea>
-                                    </div>
-                                </form>
-                                <h6 class="text-center text-uppercase font-weight-bold">¿Estás listo/a para enviarla?</h6>
-                            </div>
+        <div class="container d-flex justify-content-around align-items-center mb-3">
+            <a class="footer__menu__texto--acolor" href="#" data-toggle="modal" data-target="#modalSend">Envíanos tus recetas</a>
+
+            <div class="modal" id="modalSend">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">¡Evíanos tu receta!</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="assets/form/form-footer.svg" class="img-fluid mb-3 d-block mx-auto" alt="" width="250">
+                            <form action="POST" class="formulario">
+                                <div class="form-group formulario__input">
+                                    <label for="InputName2">Nombre completo</label>
+                                    <input type="text" class="form-control" id="InputName2" placeholder="Enter full name">
+                                </div>
+                                <div class="form-group formulario__input">
+                                    <label for="InputEmail2">Email address</label>
+                                    <input type="email" class="form-control" id="InputEmail2" placeholder="Enter email">
+                                </div>
+                                <div class="form-group formulario__categoria">
+                                    <label for="inputCategoria2">Categoría</label>
+                                    <select id="inputCategoria2" class="form-control formulario__categoria--color">
+                                        <option>
+                                    Choose...
+                                        </option>
+                                        <option>
+                                    Comidas saladas
+                                        </option>
+                                        <option>
+                                    Comidas dulces
+                                        </option>
+                                        <option>
+                                    Bebidas
+                                        </option>
+                                        <option>
+                                    Otras
+                                        </option>
+                                    </select>
+                                </div>
     
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal">¡Claro que sí!</button>
-                            </div>
+                                <div class="form-group formulario__textarea">
+                                    <textarea class="form-control" id="Textarea2" rows="10" placeholder="Escribe tu receta incluyendo ingredientes y preparación..."></textarea>
+                                </div>
+                            </form>
+                            <h6 class="text-center text-uppercase font-weight-bold">¿Estás listo/a para enviarla?</h6>
                         </div>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item footer__menu__texto">
-                <a class="nav-link footer__menu__texto--acolor" href="#" data-toggle="modal" data-target="#modalSusc">Suscríbete</a>
-                <div class="modal" id="modalSusc">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">¡Así que quieres suscribirte!</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="assets/form/form-check.svg" class="img-fluid mb-3" alt="" width="150">
-                                <form action="POST" class="formulario">
-                                    <div class="form-group formulario__input">
-                                        <label for="Name">Nombre completo</label>
-                                        <input type="text" class="form-control" id="Name" placeholder="Enter full name">
-                                    </div>
-                                    <div class="form-group formulario__input">
-                                        <label for="Email">Email address</label>
-                                        <input type="email" class="form-control" id="Email" placeholder="Enter email">
-                                    </div>
-                                </form>
-                                <h6 class="text-center text-uppercase font-weight-bold">¿Estás seguro/a de suscribirte?</h6>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal">¡Claro que sí!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
 
-        <div class="container d-flex justify-content-center mt-3 mb-2">
-            <img src="assets/rrss/instagram.svg" alt="instagram" class="img-fluid mr-4" width="25">
-            <img src="assets/rrss/facebook.svg" alt="facebook" class="img-fluid mr-4" width="25">
-            <img src="assets/rrss/tik-tok.svg" alt="tik-tok" class="img-fluid mr-4" width="25">
-            <img src="assets/rrss/correo.svg" alt="correo" class="img-fluid" width="25">
+                    <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">¡Claro que sí!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/brand/logo2.png" alt="Segundo logo de SaborVegetal, formado por un círculo negro con una etiqueta verde con el nombre de Sabor Vegetal y un subtítulo rosado que dice come sano, come vegano" class="img-fluid mt-2" width="200">
+
+            <a class="footer__menu__texto--acolor" href="#" data-toggle="modal" data-target="#modalSusc">Quieres suscribirte?</a>
+            <div class="modal" id="modalSusc">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">¡Así que quieres suscribirte!</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/form/form-check.svg" class="img-fluid mb-3 d-block mx-auto" alt="" width="150">
+                            <form action="POST" class="formulario">
+                                <div class="form-group formulario__input">
+                                    <label for="Name">Nombre completo</label>
+                                    <input type="text" class="form-control" id="Name" placeholder="Enter full name">
+                                </div>
+                                <div class="form-group formulario__input">
+                                    <label for="Email">Email address</label>
+                                    <input type="email" class="form-control" id="Email" placeholder="Enter email">
+                                </div>
+                            </form>
+                            <h6 class="text-center text-uppercase font-weight-bold">¿Estás seguro/a de suscribirte?</h6>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">¡Claro que sí!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!----------Boton UP------------->
-        <a href="recetas.html" class="btn footer__boton" role="button" aria-disabled="true">UP</a>
+
+        <div class="container d-flex justify-content-center">
+            <img src="assets/rrss/instagram.svg" alt="instagram" class="img-fluid mb-2 mr-4" width="22">
+            <img src="assets/rrss/facebook.svg" alt="facebook" class="img-fluid mb-2 mr-4" width="22">
+            <img src="assets/rrss/correo.svg" alt="correo" class="img-fluid mb-2" width="22">
+        </div>
     </footer>
+    <!----------Boton UP------------->
+    <a href="recetas.html" class="text-center btn footer__boton" role="button" aria-disabled="true">UP</a>
 
 </body>
 </html>
