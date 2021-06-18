@@ -85,7 +85,7 @@ body {
   border: 1px solid #EB6424;
   background-color: #FFFFF4;
   width: 20rem;
-  height: auto;
+  height: 360px;
 }
 
 .izquierda .galeria .galeria__card .tarjeta .tarjeta__h5 {
@@ -94,6 +94,33 @@ body {
 
 .izquierda .galeria .galeria__card .tarjeta .botonRec {
   width: 200px;
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__cabeza {
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto {
+  background-image: url(../assets/recetas/img-recetas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto2 {
+  background-image: url(../assets/recetas/postres.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto3 {
+  background-image: url(../assets/recetas/comidas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto4 {
+  background-image: url(../assets/recetas/cenas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto5 {
+  background-image: url(../assets/recetas/bebidas.jpeg);
 }
 
 .izquierda .galeria .galeria__card .tarjeta__size {
@@ -135,8 +162,8 @@ body {
 }
 
 .izquierda .galeria .galeria__card .tarjeta:hover, .izquierda .galeria .galeria__card .tarjeta__size:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   border: 2px solid #EB6424;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -248,7 +275,7 @@ body {
 
 .derecha .galeria__derecha .tarjeta {
   border: 1px solid #EB6424;
-  width: 25rem;
+  width: 23rem;
   height: auto;
 }
 
@@ -261,7 +288,7 @@ body {
 }
 
 .derecha .derecha__videos {
-  max-width: 26rem;
+  max-width: 24rem;
   border-radius: 8px;
 }
 
@@ -278,18 +305,41 @@ body {
 }
 
 .videos .tarjetaV {
-  border: 1px solid #EB6424;
+  border: 2px solid #546C1F;
   background-color: #FFFFF4;
-  width: 20rem;
-  height: auto;
+  max-width: 18rem;
+  height: 365px;
 }
 
 .videos .tarjetaV .tarjetaV__h5 {
   color: #546C1F;
 }
 
+.videos .tarjetaV .tarjetaV__cabeza {
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.videos .tarjetaV .tarjetaV__foto {
+  background-image: url(../assets/recetas/img-recetas.jpeg);
+}
+
+.videos .tarjetaV .tarjetaV__foto2 {
+  background-image: url(../assets/recetas/postres.jpeg);
+}
+
+.videos .tarjetaV .tarjetaV__foto3 {
+  background-image: url(../assets/recetas/comidas.jpeg);
+}
+
+.videos .tarjetaV .tarjetaV__foto4 {
+  background-image: url(../assets/recetas/cenas.jpeg);
+}
+
 .videos .tarjetaV:hover {
-  border: 2px solid #EB6424;
+  border: 3px solid #1C5813;
 }
 
 .fondo {

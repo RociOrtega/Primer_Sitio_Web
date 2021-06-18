@@ -108,13 +108,34 @@ body{
                 border: 1px solid $d-orang;
                 background-color: $blanco;
                 width: 20rem;
-                height: auto;
+                height: 360px;
 
                 .tarjeta__h5{
                     color: $oliva;
                 }
                 .botonRec{
                     width: 200px;
+                }
+                .tarjeta__cabeza{
+                    height: 220px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .tarjeta__foto{
+                    background-image: url(../assets/recetas/img-recetas.jpeg);
+                }
+                .tarjeta__foto2{
+                    background-image: url(../assets/recetas/postres.jpeg);
+                }
+                .tarjeta__foto3{
+                    background-image: url(../assets/recetas/comidas.jpeg);
+                }
+                .tarjeta__foto4{
+                    background-image: url(../assets/recetas/cenas.jpeg);
+                }
+                .tarjeta__foto5{
+                    background-image: url(../assets/recetas/bebidas.jpeg);
                 }
             }
             .tarjeta__size{
@@ -148,7 +169,7 @@ body{
                 }
             }
             .tarjeta:hover, .tarjeta__size:hover{
-                transform: scale(1.03);
+                transform: scale(1.01);
                 border: 2px solid $d-orang;
                 transition: 0.5s;
             }
@@ -229,7 +250,7 @@ body{
     .galeria__derecha{
         .tarjeta{
             border: 1px solid $d-orang;
-            width: 25rem;
+            width: 23rem;
             height: auto;
 
             .tarjeta__h5{
@@ -242,7 +263,7 @@ body{
         }
     }
     .derecha__videos{
-        max-width: 26rem;
+        max-width: 24rem;
         border-radius: 8px;
     }
 }
@@ -260,17 +281,36 @@ body{
         margin-bottom: 10px;
     }
     .tarjetaV{
-        border: 1px solid $d-orang;
+        border: 2px solid $oliva;
         background-color: $blanco;
-        width: 20rem;
-        height: auto;
+        max-width: 18rem;
+        height: 365px;
 
         .tarjetaV__h5{
             color: $oliva;
         }
+
+        .tarjetaV__cabeza{
+            height: 220px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .tarjetaV__foto{
+            background-image: url(../assets/recetas/img-recetas.jpeg);
+        }
+        .tarjetaV__foto2{
+            background-image: url(../assets/recetas/postres.jpeg);
+        }
+        .tarjetaV__foto3{
+            background-image: url(../assets/recetas/comidas.jpeg);
+        }
+        .tarjetaV__foto4{
+            background-image: url(../assets/recetas/cenas.jpeg);
+        }
     }
     .tarjetaV:hover{
-        border: 2px solid $d-orang;
+        border: 3px solid $verde;
     }
 }
 
