@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$colores_1: (
+    negro:     #000000,
+    rojo:      #9F3310,
+    d-orang:  #D6771C,
+    naranjo:   #ECA923,
+    verde:     #546C1F,
+    d-verde:   #223E27,
+    plomo:     #DEE5E5,
+    blanco:    #FFFFF4
+);
+
+$negro: map-get($colores_1, negro);
+$rojo:  map-get($colores_1, rojo);
+$d-orang:  map-get($colores_1, d-orang);
+$naranjo:  map-get($colores_1, naranjo);
+$verde:  map-get($colores_1, verde);
+$d-verde:  map-get($colores_1, d-verde);
+$plomo:  map-get($colores_1, plomo);
+$blanco:  map-get($colores_1, blanco);
+
+body{
+    background-color: $blanco;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+// M E N U
+.menu{
+    background-color: $negro;
+}
+
+// P R E S E N T A C I O N
+
+.carrusel__titulo{
+    font-size: 50px;
+    text-shadow: 1px 1px 3px $negro;
+    color: $blanco;
+    background: #0000004f;
+    background-clip: content-box;
+}
+
+.presentacion{
+    .presentacion__logo{
+        margin-top: 80px;
+        width: 45%;
+    }
+    .presentacion__titulo{
+        color: #68220b;
+        text-shadow: 1px 1px 1px #68220b;
+    }
+    .presentacion__subtitulo{
+        color: $d-verde;
+        text-shadow: 1px 0px 2px $d-verde;
+    }
+}
+.titulo{
+    color: #68220b;
+    text-shadow: 1px 1px 1px #68220b;
+}
+
+// L I N E A - D E - D I V I S I O N
+@for $n from 1 through 2{
+    .hr#{$n}{
+        background-color: $naranjo;
+        border-style: none;
+        @if($n == 1){
+            height: 3px;
+        } @else{
+            height: 1px;
+        }
+    } 
+}
+
+// D E S A R R O L L O
+
+// Z O N A - I Z Q U I E R D A
+.izquierda{
+    .titulo__galeria{
+        color: $rojo;
+        font-weight: 900;
+    }
+    .galeria{
+        border-bottom: 3px solid $naranjo;
+        border-radius: 8px;
+        background-color: $plomo;
+
+        .galeria__card{
+            .tarjeta, .tarjetaR, .tarjetaA{
+                border: 1px solid $d-orang;
+                background-color: $blanco;
+                width: 20rem;
+                height: 500px;
+
+                .tarjeta__h5{
+                    color: $rojo;
+                }
+                .botonRec{
+                    width: 200px;
+                }
+                .tarjeta__cabeza{
+                    height: 300px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .tarjeta__foto{
+                    background-image: url(../assets/recetas/helado.jpeg);
+                }
+                .tarjeta__foto2{
+                    background-image: url(../assets/recetas/arroz.jpeg);
+                }
+                .tarjeta__foto3{
+                    background-image: url(../assets/recetas/no-pollo.jpeg);
+                }
+                .tarjeta__foto4{
+                    background-image: url(../assets/recetas/lasaña.jpeg);
+                }
+                .tarjeta__foto5{
+                    background-image: url(../assets/recetas/noodles.jpeg);
+                }
+                .tarjeta__foto6{
+                    background-image: url(../assets/recetas/danesa.jpeg);
+                }
+                .tarjeta__foto7{
+                    background-image: url(../assets/recetas/cenas.jpeg);
+                }
+                .tarjeta__foto8{
+                    background-image: url(../assets/recetas/postres.jpeg);
+                }
+                .tarjeta__foto9{
+                    background-image: url(../assets/recetas/img-recetas.jpeg);
+                }
+                .tarjeta__foto10{
+                    background-image: url(../assets/recetas/comidas.jpeg);
+                }
+                .tarjeta__foto11{
+                    background-image: url(../assets/recetas/bebidas.jpeg);
+                }
+                .tarjeta__foto12{
+                    background-image: url(../assets/recetas/burguer.jpeg);
+                }
+                .tarjeta__foto13{
+                    background-image: url(../assets/recetas/ensalada.jpeg);
+                }
+                .tarjeta__foto14{
+                    background-image: url(../assets/recetas/batido.jpeg);
+                }
+                .tarjeta__foto15{
+                    background-image: url(../assets/recetas/crema.jpeg);
+                }
+                .tarjeta__foto16{
+                    background-image: url(../assets/recetas/cripy.jpeg);
+                }
+            }
+            .tarjetaR{
+                height: 400px;
+            }
+            .tarjetaA{
+                height: 300px;
+            }
+            .tarjeta__size{
+                border: 1px solid $d-orang;
+                background-color: $blanco;
+                width: 50rem;
+                height: auto;
+                .foto{
+                    height: 300px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .foto__url{
+                    background-image: url(../assets/tips-cul/img-tips.jpeg);
+                }
+                .foto__url2{
+                    background-image: url(../assets/sa_nu/veggie.jpeg);
+                }
+                .foto__url3{
+                    background-image: url(../assets/sa_nu/vegetales.jpeg);
+                }
+                .foto__url4{
+                    background-image: url(../assets/sa_nu/nutrientes.jpeg);
+                }
+                .tarjeta__h5{
+                    color: $rojo;
+                }
+                .botonArt{
+                    width: 200px;
+                }
+                .tarjeta__p{
+                    color: $d-verde;
+                }
+            }
+            .tarjeta:hover, .tarjeta__size:hover, .tarjetaR:hover, .tarjetaA:hover{
+                transform: scale(1.02);
+                border: 2px solid $d-orang;
+                transition: 0.5s;
+            }
+        }
+        .galeria__boton{
+            border-radius: 8px;
+            border: none;
+            height: 50px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transform: translateX(0px);
+            transition-duration: 0.3s;
+            width: 400px;
+            letter-spacing: 4px;
+            background-color: $rojo;
+        }
+
+        .galeria__boton:hover{
+            transform: translateY(-6px);
+            animation: 1.5s cajaMov infinite;
+        }
+            
+        @keyframes cajaMov{
+            50%{
+                transform: translateY(-1px);
+            }
+        }
+
+    }
+}
+
+// Z O N A - D E R E C H A
+.derecha{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    .derecha__titulo{
+        color: $rojo;
+        text-shadow: 1px 1px 1px $rojo;
+    }
+    .presentacion__parrafo{
+        color: $d-verde;
+    }
+    .formulario{
+        label{
+            color: $negro;
+            font-weight: bold;
+        }
+        .formulario__categoria--color{
+            background-color: $verde;
+            color: $blanco;
+        }
+        .formulario__categoria--color:hover{
+            background-color: $d-verde;
+            color: $blanco;
+        }
+        .formulario__boton--propiedades{
+            background-color: $d-orang;
+            color: $blanco;
+            border-style: none;
+            border-radius: 8px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            width: 250px;
+            height: 50px;
+        }
+        .formulario__boton--propiedades:hover{
+            transform: scale(1.2);
+            animation: 1s flash 1;
+            transition: 0.5s;
+            color: $blanco;
+        }
+        @keyframes flash{
+            50% { opacity: 1; }
+            25%, 75% { opacity: 0; }
+        }    
+    }
+
+    .galeria__derecha{
+        .tarjeta{
+            border: 1px solid $naranjo;
+            width: 23rem;
+            height: auto;
+
+            .tarjeta__h5{
+                color: $rojo;
+            }
+        }
+            
+        .tarjeta:hover{
+            border: 2px solid $naranjo;
+        }
+    }
+    .derecha__videos{
+        max-width: 24rem;
+        border-radius: 8px;
+    }
+}
+
+// Z O N A - C E N T R A L
+.videos{
+    .videos__titulo{
+        color: $rojo;
+        margin-bottom: 20px;
+        text-shadow: 1px 0px 1px $rojo;
+        font-weight: bold;
+    }
+    .videos__caja{
+        max-width: 18rem;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    .tarjetaV{
+        border: 2px solid $naranjo;
+        background-color: $blanco;
+        max-width: 18rem;
+        height: 365px;
+
+        .tarjetaV__h5{
+            color: $rojo;
+        }
+
+        .tarjetaV__cabeza{
+            height: 220px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .tarjetaV__foto{
+            background-image: url(../assets/recetas/img-recetas.jpeg);
+        }
+        .tarjetaV__foto2{
+            background-image: url(../assets/recetas/postres.jpeg);
+        }
+        .tarjetaV__foto3{
+            background-image: url(../assets/recetas/comidas.jpeg);
+        }
+        .tarjetaV__foto4{
+            background-image: url(../assets/recetas/cenas.jpeg);
+        }
+    }
+    .tarjetaV:hover{
+        border: 3px solid $naranjo;
+    }
+}
+
+// C O N T A C T O
+.fondo{
+    background-image: linear-gradient(
+      115deg,
+      #dee5e550,
+      #0000009c),
+    url(../assets/form/form-fondo.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContact{
+    width: 80vw;
+    height: auto;
+    background-color: #d6761cd0;
+    color: $blanco;
+    border-radius: 1%;
+    padding: 2%;
+    
+    label{
+        font-size: 18px;
+        width: 100%;
+        height: 40px;
+        border-style: none;
+        border-radius: 3px;
+    }
+
+    button{
+        width: 100%;
+        height: 45px;
+        font-size: 17px;
+        background: $verde;
+        border-style: none;
+    }
+}
+
+// P I E - D E - P A G I N A
+.footer{
+    background-color: $rojo;
+    height: auto;
+
+    .footer__menu__texto{
+        color: $blanco;
+        text-decoration-line: none;
+        font-size: 18px;
+    }
+
+    .footer__menu__texto:hover{
+        color: #fffff4c2;
+        text-decoration-line: underline;
+    }
+
+    .footer__foto{
+        width: 160px;
+    }
+
+    .footer__boton{
+        background-color: $negro;
+        border-style: none;
+        width: 100%;
+        text-decoration: none;
+        color: $blanco;
+        letter-spacing: 5px;
+        font-weight: bold;
+        height: 35px;
+    }
+    .footer__boton:hover{
+        background-color: $verde;
+    } 
+    .formulario{
+        .formulario__categoria--color{
+            background-color: $verde;
+            color: $blanco;
+        }
+        .formulario__categoria--color:hover{
+            background-color: $d-verde;
+            color: $blanco;
+        }
+    }   
+}
+

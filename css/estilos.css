@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,22 +15,6 @@ body {
   background-color: #000000;
 }
 
-.menu .submenu {
-  background-color: #EB6424;
-}
-
-.menu .submenu .submenu__item--color {
-  color: #FFFFF4;
-}
-
-.menu .submenu .submenu__item--color:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: #000000;
-}
-
 .carrusel__titulo {
   font-size: 30px;
   text-shadow: 1px 1px 3px #000000;
@@ -44,87 +29,139 @@ body {
 }
 
 .presentacion .presentacion__titulo {
-  color: #1C5813;
-  text-shadow: 1px 1px 2px #546C1F;
+  color: #223E27;
+  text-shadow: 1px 1px 2px #223E27;
 }
 
 .presentacion .presentacion__subtitulo {
-  color: #546C1F;
-  text-shadow: 1px 1px 1px #1C5813;
+  color: #234A35;
+  text-shadow: 1px 1px 1px #234A35;
 }
 
 .titulo {
-  color: #1C5813;
-  text-shadow: 1px 1px 2px #546C1F;
+  color: #223E27;
+  text-shadow: 1px 1px 2px #223E27;
 }
 
 .hr1 {
-  background-color: #FA9500;
+  background-color: #ECA923;
   border-style: none;
   height: 3px;
 }
 
 .hr2 {
-  background-color: #FA9500;
+  background-color: #ECA923;
   border-style: none;
   height: 1px;
 }
 
+.izquierda .titulo__galeria {
+  color: #D6771C;
+  text-shadow: 1px 1px 2px #D6771C;
+}
+
 .izquierda .galeria {
-  border-bottom: 2px solid #FA9500;
+  border-bottom: 2px solid #ECA923;
   border-radius: 8px;
   background-color: #DEE5E5;
 }
 
-.izquierda .galeria .galeria__h2 {
-  color: #EB6424;
-  text-shadow: 1px 1px 2px #FA9500;
-}
-
-.izquierda .galeria .galeria__card .tarjeta {
-  border: 1px solid #EB6424;
+.izquierda .galeria .galeria__card .tarjeta, .izquierda .galeria .galeria__card .tarjetaR, .izquierda .galeria .galeria__card .tarjetaA {
+  border: 1px solid;
   background-color: #FFFFF4;
   width: 20rem;
-  height: 360px;
+  height: 500px;
 }
 
-.izquierda .galeria .galeria__card .tarjeta .tarjeta__h5 {
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__h5, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__h5, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__h5 {
   color: #546C1F;
 }
 
-.izquierda .galeria .galeria__card .tarjeta .botonRec {
+.izquierda .galeria .galeria__card .tarjeta .botonRec, .izquierda .galeria .galeria__card .tarjetaR .botonRec, .izquierda .galeria .galeria__card .tarjetaA .botonRec {
   width: 200px;
 }
 
-.izquierda .galeria .galeria__card .tarjeta .tarjeta__cabeza {
-  height: 220px;
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__cabeza, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__cabeza, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__cabeza {
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto {
-  background-image: url(../assets/recetas/img-recetas.jpeg);
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto {
+  background-image: url(../assets/recetas/helado.jpeg);
 }
 
-.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto2 {
-  background-image: url(../assets/recetas/postres.jpeg);
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto2, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto2, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto2 {
+  background-image: url(../assets/recetas/arroz.jpeg);
 }
 
-.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto3 {
-  background-image: url(../assets/recetas/comidas.jpeg);
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto3, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto3, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto3 {
+  background-image: url(../assets/recetas/no-pollo.jpeg);
 }
 
-.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto4 {
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto4, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto4, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto4 {
+  background-image: url(../assets/recetas/lasaña.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto5, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto5, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto5 {
+  background-image: url(../assets/recetas/noodles.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto6, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto6, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto6 {
+  background-image: url(../assets/recetas/danesa.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto7, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto7, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto7 {
   background-image: url(../assets/recetas/cenas.jpeg);
 }
 
-.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto5 {
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto8, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto8, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto8 {
+  background-image: url(../assets/recetas/postres.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto9, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto9, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto9 {
+  background-image: url(../assets/recetas/img-recetas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto10, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto10, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto10 {
+  background-image: url(../assets/recetas/comidas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto11, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto11, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto11 {
   background-image: url(../assets/recetas/bebidas.jpeg);
 }
 
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto12, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto12, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto12 {
+  background-image: url(../assets/recetas/burguer.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto13, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto13, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto13 {
+  background-image: url(../assets/recetas/ensalada.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto14, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto14, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto14 {
+  background-image: url(../assets/recetas/batido.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto15, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto15, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto15 {
+  background-image: url(../assets/recetas/crema.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto16, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto16, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto16 {
+  background-image: url(../assets/recetas/cripy.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjetaR {
+  height: 400px;
+}
+
+.izquierda .galeria .galeria__card .tarjetaA {
+  height: 300px;
+}
+
 .izquierda .galeria .galeria__card .tarjeta__size {
-  border: 1px solid #EB6424;
+  border: 1px solid;
   background-color: #FFFFF4;
   width: 50rem;
   height: auto;
@@ -161,10 +198,10 @@ body {
   width: 250px;
 }
 
-.izquierda .galeria .galeria__card .tarjeta:hover, .izquierda .galeria .galeria__card .tarjeta__size:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  border: 2px solid #EB6424;
+.izquierda .galeria .galeria__card .tarjeta:hover, .izquierda .galeria .galeria__card .tarjeta__size:hover, .izquierda .galeria .galeria__card .tarjetaR:hover, .izquierda .galeria .galeria__card .tarjetaA:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  border: 2px solid;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -212,11 +249,11 @@ body {
 
 .derecha .derecha__titulo {
   color: #546C1F;
-  text-shadow: 1px 1px 1px #1C5813;
+  text-shadow: 1px 1px 1px #223E27;
 }
 
 .derecha .presentacion__parrafo {
-  color: #8C7F2B;
+  color: #9F3310;
 }
 
 .derecha .formulario label {
@@ -225,17 +262,16 @@ body {
 }
 
 .derecha .formulario .formulario__categoria--color {
-  background-color: #1C5813;
+  background-color: #223E27;
   color: #FFFFF4;
 }
 
 .derecha .formulario .formulario__categoria--color:hover {
-  background-color: #1C5813;
+  background-color: #223E27;
   color: #FFFFF4;
 }
 
 .derecha .formulario .formulario__boton--propiedades {
-  background-color: #EB6424;
   color: #FFFFF4;
   border-style: none;
   border-radius: 8px;
@@ -274,7 +310,7 @@ body {
 }
 
 .derecha .galeria__derecha .tarjeta {
-  border: 1px solid #EB6424;
+  border: 1px solid;
   width: 23rem;
   height: auto;
 }
@@ -284,7 +320,7 @@ body {
 }
 
 .derecha .galeria__derecha .tarjeta:hover {
-  border: 2px solid #EB6424;
+  border: 2px solid;
 }
 
 .derecha .derecha__videos {
@@ -293,7 +329,7 @@ body {
 }
 
 .videos .videos__titulo {
-  color: #1C5813;
+  color: #223E27;
   margin-bottom: 20px;
   text-shadow: 1px 1px 1px #546C1F;
 }
@@ -339,7 +375,7 @@ body {
 }
 
 .videos .tarjetaV:hover {
-  border: 3px solid #1C5813;
+  border: 3px solid #223E27;
 }
 
 .fondo {
@@ -384,7 +420,7 @@ body {
 }
 
 .footer {
-  background-color: #1C5813;
+  background-color: #BF6134;
   height: auto;
 }
 
@@ -421,12 +457,12 @@ body {
 }
 
 .footer .formulario .formulario__categoria--color {
-  background-color: #1C5813;
+  background-color: #223E27;
   color: #FFFFF4;
 }
 
 .footer .formulario .formulario__categoria--color:hover {
-  background-color: #1C5813;
+  background-color: #223E27;
   color: #FFFFF4;
 }
 /*# sourceMappingURL=estilos.css.map */

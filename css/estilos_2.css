@@ -1,0 +1,474 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFF4;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu {
+  background-color: #000000;
+}
+
+.carrusel__titulo {
+  font-size: 50px;
+  text-shadow: 1px 1px 3px #000000;
+  color: #FFFFF4;
+  background: #0000004f;
+  background-clip: content-box;
+}
+
+.presentacion .presentacion__logo {
+  margin-top: 80px;
+  width: 45%;
+}
+
+.presentacion .presentacion__titulo {
+  color: #68220b;
+  text-shadow: 1px 1px 1px #68220b;
+}
+
+.presentacion .presentacion__subtitulo {
+  color: #223E27;
+  text-shadow: 1px 0px 2px #223E27;
+}
+
+.titulo {
+  color: #68220b;
+  text-shadow: 1px 1px 1px #68220b;
+}
+
+.hr1 {
+  background-color: #ECA923;
+  border-style: none;
+  height: 3px;
+}
+
+.hr2 {
+  background-color: #ECA923;
+  border-style: none;
+  height: 1px;
+}
+
+.izquierda .titulo__galeria {
+  color: #9F3310;
+  font-weight: 900;
+}
+
+.izquierda .galeria {
+  border-bottom: 3px solid #ECA923;
+  border-radius: 8px;
+  background-color: #DEE5E5;
+}
+
+.izquierda .galeria .galeria__card .tarjeta, .izquierda .galeria .galeria__card .tarjetaR, .izquierda .galeria .galeria__card .tarjetaA {
+  border: 1px solid #D6771C;
+  background-color: #FFFFF4;
+  width: 20rem;
+  height: 500px;
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__h5, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__h5, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__h5 {
+  color: #9F3310;
+}
+
+.izquierda .galeria .galeria__card .tarjeta .botonRec, .izquierda .galeria .galeria__card .tarjetaR .botonRec, .izquierda .galeria .galeria__card .tarjetaA .botonRec {
+  width: 200px;
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__cabeza, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__cabeza, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__cabeza {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto {
+  background-image: url(../assets/recetas/helado.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto2, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto2, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto2 {
+  background-image: url(../assets/recetas/arroz.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto3, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto3, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto3 {
+  background-image: url(../assets/recetas/no-pollo.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto4, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto4, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto4 {
+  background-image: url(../assets/recetas/lasaña.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto5, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto5, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto5 {
+  background-image: url(../assets/recetas/noodles.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto6, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto6, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto6 {
+  background-image: url(../assets/recetas/danesa.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto7, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto7, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto7 {
+  background-image: url(../assets/recetas/cenas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto8, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto8, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto8 {
+  background-image: url(../assets/recetas/postres.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto9, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto9, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto9 {
+  background-image: url(../assets/recetas/img-recetas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto10, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto10, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto10 {
+  background-image: url(../assets/recetas/comidas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto11, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto11, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto11 {
+  background-image: url(../assets/recetas/bebidas.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto12, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto12, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto12 {
+  background-image: url(../assets/recetas/burguer.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto13, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto13, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto13 {
+  background-image: url(../assets/recetas/ensalada.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto14, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto14, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto14 {
+  background-image: url(../assets/recetas/batido.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto15, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto15, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto15 {
+  background-image: url(../assets/recetas/crema.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta .tarjeta__foto16, .izquierda .galeria .galeria__card .tarjetaR .tarjeta__foto16, .izquierda .galeria .galeria__card .tarjetaA .tarjeta__foto16 {
+  background-image: url(../assets/recetas/cripy.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjetaR {
+  height: 400px;
+}
+
+.izquierda .galeria .galeria__card .tarjetaA {
+  height: 300px;
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size {
+  border: 1px solid #D6771C;
+  background-color: #FFFFF4;
+  width: 50rem;
+  height: auto;
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .foto {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .foto__url {
+  background-image: url(../assets/tips-cul/img-tips.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .foto__url2 {
+  background-image: url(../assets/sa_nu/veggie.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .foto__url3 {
+  background-image: url(../assets/sa_nu/vegetales.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .foto__url4 {
+  background-image: url(../assets/sa_nu/nutrientes.jpeg);
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .tarjeta__h5 {
+  color: #9F3310;
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .botonArt {
+  width: 200px;
+}
+
+.izquierda .galeria .galeria__card .tarjeta__size .tarjeta__p {
+  color: #223E27;
+}
+
+.izquierda .galeria .galeria__card .tarjeta:hover, .izquierda .galeria .galeria__card .tarjeta__size:hover, .izquierda .galeria .galeria__card .tarjetaR:hover, .izquierda .galeria .galeria__card .tarjetaA:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  border: 2px solid #D6771C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.izquierda .galeria .galeria__boton {
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  width: 400px;
+  letter-spacing: 4px;
+  background-color: #9F3310;
+}
+
+.izquierda .galeria .galeria__boton:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-animation: 1.5s cajaMov infinite;
+          animation: 1.5s cajaMov infinite;
+}
+
+@-webkit-keyframes cajaMov {
+  50% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+@keyframes cajaMov {
+  50% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+.derecha {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.derecha .derecha__titulo {
+  color: #9F3310;
+  text-shadow: 1px 1px 1px #9F3310;
+}
+
+.derecha .presentacion__parrafo {
+  color: #223E27;
+}
+
+.derecha .formulario label {
+  color: #000000;
+  font-weight: bold;
+}
+
+.derecha .formulario .formulario__categoria--color {
+  background-color: #546C1F;
+  color: #FFFFF4;
+}
+
+.derecha .formulario .formulario__categoria--color:hover {
+  background-color: #223E27;
+  color: #FFFFF4;
+}
+
+.derecha .formulario .formulario__boton--propiedades {
+  background-color: #D6771C;
+  color: #FFFFF4;
+  border-style: none;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+}
+
+.derecha .formulario .formulario__boton--propiedades:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-animation: 1s flash 1;
+          animation: 1s flash 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #FFFFF4;
+}
+
+@-webkit-keyframes flash {
+  50% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  50% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.derecha .galeria__derecha .tarjeta {
+  border: 1px solid #ECA923;
+  width: 23rem;
+  height: auto;
+}
+
+.derecha .galeria__derecha .tarjeta .tarjeta__h5 {
+  color: #9F3310;
+}
+
+.derecha .galeria__derecha .tarjeta:hover {
+  border: 2px solid #ECA923;
+}
+
+.derecha .derecha__videos {
+  max-width: 24rem;
+  border-radius: 8px;
+}
+
+.videos .videos__titulo {
+  color: #9F3310;
+  margin-bottom: 20px;
+  text-shadow: 1px 0px 1px #9F3310;
+  font-weight: bold;
+}
+
+.videos .videos__caja {
+  max-width: 18rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.videos .tarjetaV {
+  border: 2px solid #ECA923;
+  background-color: #FFFFF4;
+  max-width: 18rem;
+  height: 365px;
+}
+
+.videos .tarjetaV .tarjetaV__h5 {
+  color: #9F3310;
+}
+
+.videos .tarjetaV .tarjetaV__cabeza {
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.videos .tarjetaV .tarjetaV__foto {
+  background-image: url(../assets/recetas/img-recetas.jpeg);
+}
+
+.videos .tarjetaV .tarjetaV__foto2 {
+  background-image: url(../assets/recetas/postres.jpeg);
+}
+
+.videos .tarjetaV .tarjetaV__foto3 {
+  background-image: url(../assets/recetas/comidas.jpeg);
+}
+
+.videos .tarjetaV .tarjetaV__foto4 {
+  background-image: url(../assets/recetas/cenas.jpeg);
+}
+
+.videos .tarjetaV:hover {
+  border: 3px solid #ECA923;
+}
+
+.fondo {
+  background-image: linear-gradient(115deg, #dee5e550, #0000009c), url(../assets/form/form-fondo.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formContact {
+  width: 80vw;
+  height: auto;
+  background-color: #d6761cd0;
+  color: #FFFFF4;
+  border-radius: 1%;
+  padding: 2%;
+}
+
+.formContact label {
+  font-size: 18px;
+  width: 100%;
+  height: 40px;
+  border-style: none;
+  border-radius: 3px;
+}
+
+.formContact button {
+  width: 100%;
+  height: 45px;
+  font-size: 17px;
+  background: #546C1F;
+  border-style: none;
+}
+
+.footer {
+  background-color: #9F3310;
+  height: auto;
+}
+
+.footer .footer__menu__texto {
+  color: #FFFFF4;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-size: 18px;
+}
+
+.footer .footer__menu__texto:hover {
+  color: #fffff4c2;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer .footer__foto {
+  width: 160px;
+}
+
+.footer .footer__boton {
+  background-color: #000000;
+  border-style: none;
+  width: 100%;
+  text-decoration: none;
+  color: #FFFFF4;
+  letter-spacing: 5px;
+  font-weight: bold;
+  height: 35px;
+}
+
+.footer .footer__boton:hover {
+  background-color: #546C1F;
+}
+
+.footer .formulario .formulario__categoria--color {
+  background-color: #546C1F;
+  color: #FFFFF4;
+}
+
+.footer .formulario .formulario__categoria--color:hover {
+  background-color: #223E27;
+  color: #FFFFF4;
+}
+/*# sourceMappingURL=estilos_2.css.map */
